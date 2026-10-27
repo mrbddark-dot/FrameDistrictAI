@@ -1,5 +1,8 @@
 # Topic
-Brush Buddies Crayola Toothpaste Recall Trend
+Brush Buddies Crayola toothpaste recall
 
-# Verification Note
-Verification is needed before producing a full news story on this topic. While "brush buddies crayola toothpaste recall" is currently trending in
+# Suggested title
+Check Your Cabinets! Brush Buddies Crayola Toothpaste Recall Warning 🪥⚠️
+
+# Voiceover script
+Trending search alerts are pointing to a
