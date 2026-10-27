@@ -2,6 +2,7 @@ import os
 import json
 import urllib.request
 import urllib.error
+import time
 from pathlib import Path
 
 key = os.environ.get("GEMINI_API_KEY")
@@ -65,8 +66,19 @@ req = urllib.request.Request(
 )
 
 try:
-    with urllib.request.urlopen(req, timeout=90) as response:
-        data = json.loads(response.read().decode("utf-8"))
+    for attempt in range(4):
+        try:
+            with urllib.request.urlopen(req, timeout=90) as response:
+                data = json.loads(response.read().decode("utf-8"))
+            break
+        except urllib.error.HTTPError as exc:
+            details = exc.read().decode("utf-8", errors="replace")
+            if exc.code not in (429, 500, 502, 503, 504) or attempt == 3:
+                raise SystemExit(f"Gemini API HTTP {exc.code}: {details[:1200]}")
+            wait = 10 * (attempt + 1)
+            print(f"Gemini HTTP {exc.code}; retrying in {wait}s...")
+            time.sleep(wait)
+
     text = data["candidates"][0]["content"]["parts"][0]["text"].strip()
 except urllib.error.HTTPError as exc:
     details = exc.read().decode("utf-8", errors="replace")
