@@ -86,6 +86,45 @@ except urllib.error.HTTPError as exc:
 except (urllib.error.URLError, KeyError, IndexError, ValueError) as exc:
     raise SystemExit(f"Script generation failed: {exc}")
 
+import re
+
+match = re.search(
+    r"(?ims)^#\s*Voiceover script\s*\n(.*?)(?=^#\s|\Z)",
+    text
+)
+
+if not match:
+    raise SystemExit("ERROR: Voiceover section missing; previous script preserved")
+
+voiceover = match.group(1).strip()
+words = re.findall(r"\b[\w’'-]+\b", voiceover)
+
+if len(words) < 75:
+    raise SystemExit(
+        f"ERROR: Incomplete voiceover ({len(words)} words); "
+        "previous script.md preserved"
+    )
+
+required = [
+    "Topic",
+    "Suggested title",
+    "Voiceover script",
+    "On-screen captions",
+    "Description",
+    "Verification notes",
+]
+
+missing = [
+    name for name in required
+    if not re.search(rf"(?im)^#\s*{re.escape(name)}\s*$", text)
+]
+
+if missing:
+    raise SystemExit(
+        "ERROR: Missing sections: " + ", ".join(missing)
+        + "; previous script.md preserved"
+    )
+
 Path("script.md").write_text(text + "\n", encoding="utf-8")
-print("SUCCESS: script.md created")
+print(f"SUCCESS: Complete script saved ({len(words)} voiceover words)")
 print(text[:700])
