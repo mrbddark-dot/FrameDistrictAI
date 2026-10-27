@@ -28,7 +28,7 @@ Do not invent events, quotes, dates, statistics, or claims.
 If the topic cannot be responsibly covered from the supplied information,
 write a short note saying verification is needed and do not fabricate details.
 
-Create an original 30-45 second English YouTube Shorts draft.
+Create a COMPLETE original 30-45 second English YouTube Shorts draft. The voiceover must contain 75-110 spoken words, at least 5 complete sentences, and must never end mid-sentence. Do not output a teaser or partial draft.
 Include:
 # Topic
 # Suggested title
@@ -38,7 +38,7 @@ Include:
 # Verification notes
 
 Use a compelling but truthful hook. Avoid copying headlines or other scripts.
-Do not claim the story is verified if the supplied data does not verify it.
+Do not claim the story is verified if the supplied data does not verify it. If recall details cannot be verified from supplied information, make the script a cautious consumer-awareness piece and clearly say viewers should check official sources.
 """
 
 payload = {
