@@ -1,8 +1,5 @@
 # Topic
-Brush Buddies Crayola Toothpaste Recall
+Brush Buddies Crayola Toothpaste Recall Trend
 
-# Suggested title
-Check Your Bathroom: Crayola Kids Toothpaste Recall Alert | Frame District
-
-# Voiceover script
-If you have kids’ toothpaste sitting by your bathroom sink,
+# Verification Note
+Verification is needed before producing a full news story on this topic. While "brush buddies crayola toothpaste recall" is currently trending in
