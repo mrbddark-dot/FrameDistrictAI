@@ -46,7 +46,7 @@ payload = {
     "contents": [{"parts": [{"text": prompt}]}],
     "generationConfig": {
         "temperature": 0.7,
-        "maxOutputTokens": 1200
+        "maxOutputTokens": 2500
     }
 }
 
@@ -105,18 +105,18 @@ if len(words) < 75:
         "previous script.md preserved"
     )
 
-required = [
-    "Topic",
-    "Suggested title",
-    "Voiceover script",
-    "On-screen captions",
-    "Description",
-    "Verification notes",
-]
+section_patterns = {
+    "Topic": r"(?im)^#\s*Topic\s*$",
+    "Suggested title": r"(?im)^#\s*Suggested title\s*$",
+    "Voiceover script": r"(?im)^#\s*Voiceover script\s*$",
+    "On-screen captions": r"(?im)^#\s*On-screen captions(?:\s*\([^)]*\))?\s*$",
+    "Description": r"(?im)^#\s*Description\s*$",
+    "Verification notes": r"(?im)^#\s*Verification notes?\s*$",
+}
 
 missing = [
-    name for name in required
-    if not re.search(rf"(?im)^#\s*{re.escape(name)}\s*$", text)
+    name for name, pattern in section_patterns.items()
+    if not re.search(pattern, text)
 ]
 
 if missing:
