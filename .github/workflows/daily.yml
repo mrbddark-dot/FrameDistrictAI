@@ -20,10 +20,14 @@ jobs:
         run: python -m pip install yt-dlp
       - name: Research USA trends
         run: python trends.py
-      - name: Save trend results
+      - name: Generate script with Gemini
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python generate_script.py
+      - name: Save results
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add usa_trends.txt
-          git diff --cached --quiet || git commit -m "Update USA trends"
+          git add usa_trends.txt script.md
+          git diff --cached --quiet || git commit -m "Update USA trends and draft script"
           git push
