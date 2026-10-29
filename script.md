@@ -1,22 +1,24 @@
 # Topic
-DC Universe
+Halloween costume
 
 # Suggested title
-The Future of the DC Universe Has Fans Watching Closely!
+Last-Minute Halloween Costume Trends Scramble 🎃 #Shorts
 
 # Voiceover script
-Superhero fans are paying close attention to the future of the DC Universe as interest in comic book adaptations continues to surge. With new projects under development at DC Studios, audiences are constantly watching for official cast announcements, story details, and release schedules. Whether it involves iconic heroes like Superman and Batman or lesser-known comic characters, every update generates massive online conversation. However, rumor mills move fast in the entertainment world, making it crucial to separate fan speculation from verified studio announcements. What DC hero are you most excited to see return to the big screen? Let us know in the comments below!
+With Halloween only two days away, millions of people across the country are scrambling for last-minute costume ideas. Search trends show a huge surge in quick DIY outfits and popular pop-culture characters this week. Whether you are pulling together clothes from your closet or grabbing simple accessories online, simple concepts are taking over social media. Many creators are suggesting simple thrifted looks that require zero sewing skills and very little preparation. If you still do not have an outfit ready, checking trending DIY guides might save your holiday weekend. What are you dressing up as this year?
 
 # On-screen captions (short lines)
-- The DC Universe is trending!
-- Big buzz around DC Studios
-- Fans eager for official news
-- Superman & Batman hype
-- Rumor vs. Reality
-- Who do you want to see next?
+- Halloween is 2 days away! 🎃
+- Last-minute costume scramble
+- DIY outfits taking over 🧵
+- Quick closet transformations ✨
+- Thrifted looks trending online
+- What's your costume this year? 👇
 
 # Description
-The DC Universe is generating major search buzz as superhero fans keep a close eye on upcoming DC Studios projects. Which hero are you most hyped for? Subscribe to Frame District for the latest trending entertainment stories! #DCUniverse #DCStudios #Movies #Trending #FrameDistrict
+Halloween is just around the corner, and search trends are spiking for easy, last-minute costume ideas! Whether you're making a DIY outfit or pulling something from your wardrobe, here is what is trending. Subscribe to Frame District for daily entertainment and trending story updates!
 
 # Verification notes
-The trend feed indicated a spike in searches for "dc universe." Because the feed provides search volume without specific verified studio announcements or breaking news events, the script intentionally avoids citing unconfirmed plot details, cast rumors, dates, or box office statistics. Viewers are advised to look to official studio press releases from Warner Bros. and DC Studios for verified project confirmations.
+- Topic selected from trend feed: "halloween costume" (checked October 29, 2026).
+- Standard calendar check confirms Halloween takes place on October 31.
+- No specific unverified statistical claims, fake viral quotes, or unverified individual creator names were included in the script.
